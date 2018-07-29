@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group 'me.brandonbirchall'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+project.ext.lwjglVersion = "3.1.6"
+project.ext.jomlVersion = "1.9.9"
+project.ext.lwjglNatives = "natives-windows"
+
+
+repositories {
+    mavenCentral()
+}
+
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "org.lwjgl:lwjgl:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-assimp:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-glfw:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-openal:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-opengl:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-stb:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-xxhash:$lwjglVersion"
+    compile "org.lwjgl:lwjgl-zstd:$lwjglVersion"
+    compile "org.lwjgl:lwjgl:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-assimp:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-glfw:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-openal:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-opengl:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-stb:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-xxhash:$lwjglVersion:$lwjglNatives"
+    compile "org.lwjgl:lwjgl-zstd:$lwjglVersion:$lwjglNatives"
+    compile "org.joml:joml:${jomlVersion}"
+
+    // https://mvnrepository.com/artifact/org.l33tlabs.twl/pngdecoder
+    compile group: 'org.l33tlabs.twl', name: 'pngdecoder', version: '1.0'
+
+    // https://mvnrepository.com/artifact/com.lmax/disruptor
+    compile group: 'com.lmax', name: 'disruptor', version: '3.4.2'
+
+
+}

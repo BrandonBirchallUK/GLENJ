@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InOrderExecutionTask" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-29T10:37:36" hostname="DESKTOP-V320F60" time="0.003">
+  <properties/>
+  <testcase name="testInOrder" classname="InOrderExecutionTask" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
